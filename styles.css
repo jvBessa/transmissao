@@ -1,0 +1,73 @@
+:root{
+    --font: 'Titillium Web', sans-serif;
+    --backGround: rgb(32, 32, 32);
+    --fontColor: #e9f0ef;
+}
+
+*{
+    margin: 0px;
+}
+body{
+    background-color: var(--backGround);
+    font-family: var(--font);
+}
+#estagio-atual{
+    color: var(--fontColor);
+    text-align: center;
+}
+#conteudo-principal{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+    border: solid black 1px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(82, 82, 82);
+}
+
+#conteudo-principal p{
+    width: 90%;
+    height: 12rem;
+    text-align: center;
+    margin: 30px auto;
+    font-size: 2em;
+    color: var(--fontColor);
+    font-style: italic;
+}
+#conteudo-principal input{
+    height: 3rem;
+    width: 80%;
+    margin: 0 auto 30px;
+    padding: 0 10px;
+    border-radius: 3px;
+    border: none;
+    font-family: var(--font);
+    font-size: 1.7rem;
+    text-transform: uppercase;
+}
+input:focus{
+    border: 10px solid black;
+    box-shadow: 0 0 10px black;
+    outline-offset: 0px;
+    outline: none;
+}
+#conteudo-principal button{
+    width: 40%;
+    margin: auto;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--backGround);
+    color: var(--fontColor);
+    font-family: var(--font);
+    font-size: 1.4rem;
+}
+#conteudo-principal button:hover{
+    cursor: pointer;
+    background-color: var(--fontColor);
+    color: var(--backGround);
+}
+#conteudo-principal button:active{
+    background-color: var(--backGround);
+    color: var(--fontColor);
+}
