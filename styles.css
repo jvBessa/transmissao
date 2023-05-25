@@ -71,3 +71,10 @@ input:focus{
     background-color: var(--backGround);
     color: var(--fontColor);
 }
+
+/*pos quiz*/
+#posQuiz{
+    width: 100%;
+    border: 2px white solid;
+    display: none;
+}
