@@ -1,19 +1,36 @@
 :root{
     --font: 'Titillium Web', sans-serif;
     --backGround: rgb(32, 32, 32);
+    --contentBackGround: rgb(82, 82, 82);
     --fontColor: #e9f0ef;
 }
+
+/*teste background*/
 
 *{
     margin: 0px;
 }
 body{
-    background-color: var(--backGround);
     font-family: var(--font);
+    background-image: url(fundo.png);
+}
+#fundo{
+    height: 100vh;
+    background-color: rgb(32, 32, 32);
+}
+#quiz{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#logo{
+    margin: 30px 0 30px 0;
+    width: 6%;
 }
 #estagio-atual{
     color: var(--fontColor);
     text-align: center;
+    margin: 0 0 30px 0;
 }
 #conteudo-principal{
     display: flex;
@@ -23,14 +40,14 @@ body{
     border: solid black 1px;
     padding: 10px;
     border-radius: 10px;
-    background-color: rgb(82, 82, 82);
+    background-color: var(--contentBackGround);
 }
 
 #conteudo-principal p{
     width: 90%;
     height: 12rem;
     text-align: center;
-    margin: 30px auto;
+    margin: 30px auto 0;
     font-size: 2em;
     color: var(--fontColor);
     font-style: italic;
@@ -74,7 +91,65 @@ input:focus{
 
 /*pos quiz*/
 #posQuiz{
-    width: 100%;
-    border: 2px white solid;
     display: none;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    border: solid black 1px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--contentBackGround);
+}
+#posQuiz h1{
+    color: var(--fontColor);
+    font-size: 3rem;
+    text-align: center;
+}
+#posQuiz h2{
+    color: var(--fontColor);
+    text-align: center;
+    margin-top: 50px;
+}
+#posQuiz p{
+    width: 90%;
+    text-align: justify;
+    margin: 30px auto 0;
+    font-size: 2em;
+    color: var(--fontColor);
+}
+#emoji{
+    width: 3%;
+}
+#assinatura p{
+    text-align: right;
+}
+#posQuiz a{
+    display: flex;
+    width: 40%;
+    margin: auto; 
+    text-decoration: none;
+}
+#posQuiz button{
+    width: 100%;
+    margin: 10px auto;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--backGround);
+    color: var(--fontColor);
+    font-family: var(--font);
+    font-size: 1.4rem;
+}
+#posQuiz button:hover{
+    cursor: pointer;
+    background-color: var(--fontColor);
+    color: var(--backGround);
+}
+#posQuiz button:active{
+    background-color: var(--backGround);
+    color: var(--fontColor);
+}
+
+/*Pagina do mapa*/
+#h1Mapa{
+    color: var(--fontColor);
 }

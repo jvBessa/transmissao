@@ -10,22 +10,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div id="quiz">
-        <h1 id="estagio-atual">Etapa <span id ="etapa">1</span></h1>
-        <div id="conteudo-principal">
-            <img src="" alt="">
-            <p id="enigma">Tudo começa por mim! O fluxo que banha o outro lado! A entidade da fome, da dor, da paixão, do ÓDIO!!!</p>
-            <input type="text" id="input1">
-            <button onclick="verificaResposta()">Avançar</button>
+<body>  
+    <div id="fundo">
+        <div id="quiz">
+            <img src="logo no.png" alt="logo nova ordo" id="logo">
+            <h1 id="estagio-atual">Etapa <span id ="etapa">1</span></h1>
+            <div id="conteudo-principal">
+                <p id="enigma">Tudo começa por mim! O fluxo que banha o outro lado! A entidade da fome, da dor, da paixão, do ÓDIO!!!</p>
+                <input type="text" id="input1">
+                <button onclick="verificaResposta()">Avançar</button>
+            </div>
         </div>
-    </div>
-    <div id="posQuiz">
-        <h1>Aparentemente você não é tão inocente quanto parece</h1>
-        <p>A Nova Ordo busca por pessoas que sejam capazes de resistir aos efeitos do outro lado e lutar para manter a realidade estável, e parece que você é minimamente capaz!</p>
-        <h2>Como gostaria de ser chamado?</h2>
-        <input type="text" name="nomeAgente" id="nomeAgente">
-        <button></button>
+        <div id="posQuiz">
+            <h1>Você não é tão inocente quanto parece</h1>
+            <p>Você conseguiu acessar a transmissão da Nova Ordo, e ainda chegou até aqui? Talvez você possa até ser útil! É o seguinte, não é segredo para ninguém que a Nova Ordo está acabada, mas infelizmente a gente nunca foi muito bom em desistir das coisas. O proximo passo que daremos vai ser arriscado, a gente vai tentar recuperar os fragmentos da Morte Destinada, uma lâmina criada pela antiga Ordo Realitas, capaz de matar qualquer criatura paranormal de maneira permanente, e reuni-los, para por de vez um fim nessa era sombria uuuuuuu. Para isso, vamos precisar de mais gente, se tem algum interesse, esteja no local de origem dessa transmissão no dia XX/XX as XX:XX da manhã.
+            </p>
+            <div id="assinatura">
+                <p>Te vejo lá<br>America<br><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="emoji"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM164.1 325.5C182 346.2 212.6 368 256 368s74-21.8 91.9-42.5c5.8-6.7 15.9-7.4 22.6-1.6s7.4 15.9 1.6 22.6C349.8 372.1 311.1 400 256 400s-93.8-27.9-116.1-53.5c-5.8-6.7-5.1-16.8 1.6-22.6s16.8-5.1 22.6 1.6zM144.4 208a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm156.4 25.6c-5.3 7.1-15.3 8.5-22.4 3.2s-8.5-15.3-3.2-22.4c30.4-40.5 91.2-40.5 121.6 0c5.3 7.1 3.9 17.1-3.2 22.4s-17.1 3.9-22.4-3.2c-17.6-23.5-52.8-23.5-70.4 0z"/></svg></p>
+            </div>
+            <h2>Localização dos portadores</h2>
+            <a href="mapa.html"><button onclick="apagaFundo()">MAPA</button></a>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
