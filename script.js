@@ -12,12 +12,14 @@ var j = 0;
 var etapaAtual = document.getElementById('etapa');
 var enigma = document.getElementById('enigma');
 var quiz = document.getElementById('quiz');
+var posQuiz = document.getElementById('posQuiz');
 
 console.log(parseInt(etapaAtual.innerText))
 
 function fechaQuiz(etapa){
     if(etapa == 6){
         quiz.style.display = "none";
+        posQuiz.style.display = "inline-block";
     }
 }
 
@@ -51,4 +53,5 @@ document.addEventListener("keyup", function(event) {
         verificaResposta();
     }
 });
+
 
