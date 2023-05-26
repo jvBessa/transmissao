@@ -153,3 +153,55 @@ input:focus{
 #h1Mapa{
     color: var(--fontColor);
 }
+
+/*pagina do mapa*/
+#area-mapa{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--contentBackGround);
+    border-radius: 10px;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    color: var(--fontColor);
+}
+#headerLogo{
+    display: flex;
+    justify-content: center;
+}
+#logo2{
+    width: 6%; 
+    margin: 25px 0;
+}
+.paises{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#imagemHolder{
+    margin: 20px 0;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+}
+.paises h1{
+    text-align: center;
+}
+.mapaImagem{
+    width: 50%;
+}
+#usa{
+    width: 65%;
+}
+#interrogacao{
+    font-size: 5rem;
+    color: black;
+}
+.paises p{
+    padding: 10px;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
